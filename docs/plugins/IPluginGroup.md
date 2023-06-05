@@ -77,7 +77,7 @@ This plugin is a simple plugin that will always return the user-given `foo` fiel
 
 ## Define Plugin Group
 
-Since everything in `carefree-drawboard` 🎨 is a plugin, `IPluginGroup` itself is also a plugin. And it is even easier to define a `IPluginGroup` because it does not contain any **Logics**, and we only need to specify the **Styles**. So putting plugins inside a group is pretty straightforward - just specify the corresponding **Styles** and it will be all set.
+Since everything in `carefree-drawboard` 🎨 is a plugin, `IPluginGroup` itself is also a plugin. And it is even easier to define an `IPluginGroup` because it does not contain any **Logics**, and we only need to specify the **Styles**. So putting plugins inside a group is pretty straightforward - just specify the corresponding **Styles** and it will be all set.
 
 ```python title="tests/test_plugin_group.py"
 class PluginGroup(IPluginGroup):
