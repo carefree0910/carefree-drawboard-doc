@@ -65,6 +65,10 @@ module.exports = {
               label: "GitHub",
               href: "https://github.com/carefree0910/carefree-drawboard",
             },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/carefree0910",
+            },
           ],
         },
         {
