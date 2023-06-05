@@ -16,7 +16,7 @@ Grouping plugins can be achieved by using the `IPluginGroup` binding. We've alre
 
 Here's the complete code:
 
-```python title="tests/test_plugin_group.py"
+```python showLineNumbers title="tests/test_plugin_group.py"
 from cfdraw import *
 
 
