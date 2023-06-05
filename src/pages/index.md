@@ -2,14 +2,18 @@
 
 <div style={{textAlign: 'center'}}>
 
-  **✨ Build performant, business ready web apps in pure Python.**
+**✨ Build performant, business ready web apps in pure Python.**
 
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/carefree0910/carefree-drawboard/blob/dev/examples/server.ipynb)
-  [![PyPI version](https://badge.fury.io/py/carefree-drawboard.svg)](https://badge.fury.io/py/carefree-drawboard.svg)
-  ![Checks](https://github.com/carefree0910/carefree-drawboard/actions/workflows/checks.yml/badge.svg)
-  [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/carefree0910/carefree-drawboard/blob/dev/examples/server.ipynb)
+[![PyPI version](https://badge.fury.io/py/carefree-drawboard.svg)](https://badge.fury.io/py/carefree-drawboard.svg)
+![Checks](https://github.com/carefree0910/carefree-drawboard/actions/workflows/checks.yml/badge.svg)
+[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
-  **[Documentation](/docs/getting-started) | [Examples](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples)**
+<h3>
+
+[Documentation](/docs/getting-started) | [Examples](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples)
+
+</h3>
 
 </div>
 
