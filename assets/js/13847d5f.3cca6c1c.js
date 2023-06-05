@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcarefree_drawboard_doc=self.webpackChunkcarefree_drawboard_doc||[]).push([[9702],{9049:e=>{e.exports=JSON.parse('{"permalink":"/carefree-drawboard-doc/blog/tags/carefree-drawboard","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
