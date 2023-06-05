@@ -262,7 +262,7 @@ And here's a table of all the supported Built-in Bindings:
 
 In fact, **Base Class** is no more than an `ISocketPlugin` with a pre-defined `type` property. For example, here's the complete code of `IFieldsPlugin`:
 
-```python title="cfdraw/plugins/bindings.py"
+```python showLineNumbers title="cfdraw/plugins/bindings.py"
 class IFieldsPlugin(ISocketPlugin):
     @property
     def type(self) -> PluginType:
