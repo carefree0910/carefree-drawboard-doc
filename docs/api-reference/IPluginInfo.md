@@ -310,7 +310,7 @@ indicates that the default option is `bar2`.
 
 Here's the complete code that utilizes this `foo_field`:
 
-```python title="app.py"
+```python showLineNumbers title="app.py"
 from cfdraw import *
 
 
@@ -533,7 +533,7 @@ Nothing special, just a common use case of [`INumberField`](#inumberfield).
 
 Now, let's see the complete code on how to use this field:
 
-```python title="app.py"
+```python showLineNumbers title="app.py"
 import json
 from cfdraw import *
 from pathlib import Path
