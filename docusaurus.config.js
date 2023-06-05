@@ -46,7 +46,7 @@ module.exports = {
           items: [
             {
               label: "Introduction",
-              to: "docs/getting-started/introduction",
+              to: "docs/getting-started",
             },
             {
               label: "Installation",
@@ -54,7 +54,7 @@ module.exports = {
             },
             {
               label: "Design Philosophy",
-              to: "docs/design-philosophy/",
+              to: "docs/reference/design-philosophy/",
             },
           ],
         },
