@@ -12,7 +12,7 @@ import Video from '@site/src/components/Video';
 
 Sometimes we want to group plugins together. For instance, we may want to group the plugins that are related to the same API, or we may want to group the plugins that are related to the same category.
 
-Grouping plugins can be achieved by using the `IPluginGroup` binding. We've already provided a `test_plugin_grouop.py` file in the `tests` folder, and here we will break it down for you to understand how `IPluginGroup` works.
+Grouping plugins can be achieved by using the `IPluginGroup` binding. We've provided a `test_plugin_grouop.py` file in the `tests` folder, and here we will break it down for you to understand how `IPluginGroup` works.
 
 Here's the complete code:
 
