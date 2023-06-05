@@ -67,6 +67,34 @@ If it is `None`, we will use the registered name of the plugin as the header (wi
 
 Field definitions, this is what we customize most.
 
+:::tip
+The keys of this property will be the keys of the `extraData`. Pseudo code:
+
+```python title="app.py"
+class Plugin(IFieldsPlugin):
+    @property
+    def settings(self) -> IPluginSettings:
+        return IPluginSettings(
+            ...,
+            # highlight-start
+            pluginInfo=IFieldsPluginInfo(definitions=dict(
+                a=...,
+                b=...,
+                c=...,
+            )),
+            # highlight-end
+        )
+    
+    async def process(self, data: ISocketRequest):
+        # highlight-start
+        a = data.extraData["a"]
+        b = data.extraData["b"]
+        c = data.extraData["c"]
+        # highlight-end
+        ...
+```
+:::
+
 ### `numColumns`
 
 <Badget type="int | None" defaultValue="None" />
@@ -358,7 +386,7 @@ And here's a demo video of how this plugin works:
 
 This is used to collect local files specified by the user.
 
-:::info
+:::tip
 This is handy when we need to load local models for the plugin.
 :::
 
@@ -436,7 +464,7 @@ The default value of the field.
 
 This is used to collect a list of 'forms' from the user.
 
-:::info
+:::tip
 This is handy if the corresponding field can be 'stacked' (e.g., multi LoRA, multi ControlNet).
 :::
 
