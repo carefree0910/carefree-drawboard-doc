@@ -16,7 +16,7 @@ We've already provided a `test_chat.py` file in the `tests` folder, and here we 
 
 Here's the complete code:
 
-```python title="tests/test_chat.py"
+```python showLineNumbers title="tests/test_chat.py"
 import time
 
 from cfdraw import *
