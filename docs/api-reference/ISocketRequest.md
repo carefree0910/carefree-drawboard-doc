@@ -65,13 +65,17 @@ If only one node is selected, this field will be empty and please use [nodeData]
 
 Extra data of each plugin.
 
+:::tip
+Notice that different plugin bindings will have different format of `extraData`.
+:::
+
 ### `isInternal`
 
 <Badget type="bool" defaultValue="False" />
 
 Whether the request is internal.
 
-:::info
+:::tip
 This is used internally and should not be used elsewhere.
 :::
 
