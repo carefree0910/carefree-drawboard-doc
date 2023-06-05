@@ -11,7 +11,7 @@ import Badget from '@site/src/components/Badget';
 
 The hash of the current task.
 
-:::info
+:::tip
 This is used internally and should not be used elsewhere.
 :::
 
