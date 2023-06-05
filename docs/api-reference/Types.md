@@ -42,7 +42,7 @@ IFieldDefinition = Union[
 
 ## `IChakra`
 
-:::info
+:::tip
 This class should (and will) eventually align with all the common `chakra` props.
 :::
 
