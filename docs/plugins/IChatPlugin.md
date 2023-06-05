@@ -12,7 +12,7 @@ import Video from '@site/src/components/Video';
 
 `IChatPlugin` is a (very) simple plugin binding for you to interact with a chat API (e.g., ChatGPT API), but it is pretty out of the box to use.
 
-We've already provided a `test_chat.py` file in the `tests` folder, and here we will break it down for you to understand how `IChatPlugin` works.
+We've provided a `test_chat.py` file in the `tests` folder, and here we will break it down for you to understand how `IChatPlugin` works.
 
 Here's the complete code:
 
