@@ -214,9 +214,9 @@ Background opacity of the `expand panel`.
 
 ### `expandProps`
 
-<Badget type="IChakra | None" defaultValue="None" />
+<Badget type={<><a href="/carefree-drawboard-doc/docs/api-reference/Types#ichakra">IChakra</a> | None</>} defaultValue="None" />
 
-Extra (chakra) props of the `expand panel`.
+Extra `chakra` props of the `expand panel`.
 
 ### `pluginInfo`
 
