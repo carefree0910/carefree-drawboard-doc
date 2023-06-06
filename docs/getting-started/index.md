@@ -373,8 +373,8 @@ register_plugin("blur")(Plugin)
 
 :::info
 The register mechanism is important to make the whole system:
-* More decoupled. You can now define plugins freely without worrying about any side effects.
-* More extensible. If you want to use plugins implemented by others, you can simply import & register them.
+* More **decoupled**. You can now build plugins freely without worrying about any side effects.
+* More **extensible**. If you want to use plugins implemented by others, you can simply import & register them.
 
 See [Register Mechanism](/docs/plugins#register-mechanism) for more details.
 :::
