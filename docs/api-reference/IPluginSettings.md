@@ -104,6 +104,10 @@ class Plugin(IFieldsPlugin):
         )
 ```
 
+:::info
+Check [here](/docs/api-reference/Types#singlenodetype) for the API reference of `SingleNodeType`.
+:::
+
 ### `src`
 
 <Badget type="str | None" defaultValue="None" />
