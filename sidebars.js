@@ -25,6 +25,7 @@ module.exports = {
     "API Reference": [
       "api-reference/Types",
       "api-reference/Config",
+      "api-reference/Global-Functions",
       "api-reference/Built-in-Methods",
       "api-reference/IPluginSettings",
       "api-reference/IPluginInfo",
