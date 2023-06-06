@@ -26,10 +26,10 @@ If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs
 * Bundled some icons to boost loading speed.
 * Enhanced styles of `CFSelect` & `CFTextarea`, to make them more consistent with other components.
 * Allowed to load the page after timeout ([d01041b](https://github.com/carefree0910/carefree-drawboard/commit/d01041b19316b898ca40b678150b6efdd52cfe97)).
-* Unified `CFFormLabel` ((d2a8f8d)[https://github.com/carefree0910/carefree-drawboard/commit/d2a8f8d2b1129bfabd06c6d1921c572ef8ae857e]).
-* Supported `ImageField` ((8555c33)[https://github.com/carefree0910/carefree-drawboard/commit/8555c330414896a25a096f4ed64cecc067cb9d70], (75a5c11)[https://github.com/carefree0910/carefree-drawboard/commit/75a5c110f89b30ae4314ba2af99ce4cb746f3659]).
-* Implemented `I18NSelectField` ((ddde4d8)[https://github.com/carefree0910/carefree-drawboard/commit/ddde4d8a4f855e425c25675c5f02423996492455]).
-* Implemented `BasicEditorPlugin` ((1cae642)[https://github.com/carefree0910/carefree-drawboard/commit/1cae64278900abd0eccf98cc06bb9fc2f99be65f]).
+* Unified `CFFormLabel` ([d2a8f8d](https://github.com/carefree0910/carefree-drawboard/commit/d2a8f8d2b1129bfabd06c6d1921c572ef8ae857e)).
+* Supported `ImageField` ([8555c33](https://github.com/carefree0910/carefree-drawboard/commit/8555c330414896a25a096f4ed64cecc067cb9d70), [75a5c11](https://github.com/carefree0910/carefree-drawboard/commit/75a5c110f89b30ae4314ba2af99ce4cb746f3659)).
+* Implemented `I18NSelectField` ([ddde4d8](https://github.com/carefree0910/carefree-drawboard/commit/ddde4d8a4f855e425c25675c5f02423996492455)).
+* Implemented `BasicEditorPlugin` ([1cae642](https://github.com/carefree0910/carefree-drawboard/commit/1cae64278900abd0eccf98cc06bb9fc2f99be65f)).
 > Now we can adjust `x`, `y`, `w`, `h` of the selected `Node` elegantly.
 
 ## 2023-05-21
