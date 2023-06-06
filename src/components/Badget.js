@@ -13,17 +13,19 @@ export default function Badget({ type, defaultValue, required, appendix }) {
   );
   return (
     <p>
-      [ <strong>{type}</strong>,{" "}
+      [ <strong>{type}</strong>
       {required ? (
         <>
-          <em>required</em>
+          <em>, required</em>
+          {tag}
+        </>
+      ) : !!defaultValue ? (
+        <>
+          <em>, default</em>: <code>{defaultValue}</code>
           {tag}
         </>
       ) : (
-        <>
-          <em>default</em>: <code>{defaultValue}</code>
-          {tag}
-        </>
+        ""
       )}{" "}
       ]
     </p>
