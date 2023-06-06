@@ -34,10 +34,10 @@ Well, in fact the followings are not actually 'prerequisites', but knowing them 
 
 `carefree-drawboard` 🎨 abstracted out a powerful plugin paradigm that allows you to build plugins in a declarative way. So, if you are a `Python` developer, the fastest way to contribute is to write specific plugins in a single file `app.py` (e.g., some fancy `StableDiffusion` plugins, see [this](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion), [this](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/caption_and_diffusion), [this](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_controlnet) and [this](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_inpainting)).
 
-After you are satisfied with your plugins, (currently) you can publish them only by submit a PR to place your `Python` file in the `cfdraw/plugins/community` folder. Notice that:
+After you are satisfied with your plugins, (currently) you can publish them by submitting a PR to place your `Python` file in the `cfdraw/plugins/community` folder. Notice that:
 * You may need to change the name from `app.py` to another name (your username might be a good choice so others can immediately recognize it's your work!)
 * It's better to import your plugins with `from xxx import *` at `cfdraw/plugins/community/__init__.py`, so others can use it conveniently.
-    * Your plugin names should therefore be unique, otherwise it may suffer from import confliction!
+  * Your plugin names should therefore be unique, otherwise it may suffer from import confliction!
 * Your submitted `Python` file should **NOT** contain codes other than the plugin definitions. Typically, if you start your project with `cfdraw init`, you will get these lines at the bottom of `app.py`:
 
 ```python
@@ -48,9 +48,12 @@ app = App()
 
 * It will be better to have a detailed docstring in your plugins to indicate what models do they use, what do they do, how to use them, why you build them, etc. The more you described them, the better other can understand them and make use of them!
 
-:::info
-* In the future, `carefree-drawboard` 🎨 will provide you CLIs to pack/publish them, and other users can also use CLIs to download/install them, see [Roadmap](/docs/about/roadmap).
-* The CLI stuffs is pretty engineering-heavy which I'm not super familiar with, so I'll be very grateful if you can help me out!
+:::tip
+* In the future, we will implement a built-in marketplace for plugins, so that you can publish / download them easily!
+
+> And if the marketplace is ready, the `community` folder will be deprecated - but don't worry, we'll publish all existing plugins to the marketplace before it is removed!
+
+* Before the marketplace is ready, another way to share your plugins to others without submitting a PR is to simply share your `Python` file to others, and they can use it by importing & registering the plugins. 😆
 :::
 
 ## `React` Developers
