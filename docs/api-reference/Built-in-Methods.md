@@ -3,6 +3,10 @@ id: Built-in-Methods
 title: Built-in Methods
 ---
 
+:::tip
+Methods in this page can be accessed by any plugin in `carefree-drawboard` 🎨.
+:::
+
 ### `filter`
 
 This method can help you pick up the nodes of the specified type.
