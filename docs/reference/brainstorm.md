@@ -7,10 +7,12 @@ The reason why I create this project is that I believe the **Infinite Drawboard*
 
 ## The 'AI Operation System'
 
-> The following examples may demonstrate this idea to some extent:
-> * [Caption & Diffusion](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/caption_and_diffusion), which combines the `Image Captioning` model and the `Stable Diffusion` model.
-> * [Stable Diffusion ControlNet](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_controlnet), which decouples complicated workflows like `ControlNet` into separate, lightweight, and reusable plugins.
-> * [Stable Diffusion Inpainting](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_inpainting), which handles different types of data easily.
+:::info
+The following examples may demonstrate this idea to some extent:
+* [Caption & Diffusion](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/caption_and_diffusion), which combines the `Image Captioning` model and the `Stable Diffusion` model.
+* [Stable Diffusion ControlNet](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_controlnet), which decouples complicated workflows like `ControlNet` into separate, lightweight, and reusable plugins.
+* [Stable Diffusion Inpainting](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples/stable_diffusion_inpainting), which handles different types of data easily.
+:::
 
 AI is making progress **RAPIDLY** recently. Hundreds of Thousands of models are being released every day. How can we enjoy these models in a comfotable way?
 
