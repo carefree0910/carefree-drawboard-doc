@@ -11,7 +11,7 @@
 
 <h3>
 
-[Documentation](/docs/getting-started) | [Examples](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples)
+[Documentation](/docs/getting-started) | [GitHub](https://github.com/carefree0910/carefree-drawboard) | [Examples](https://github.com/carefree0910/carefree-drawboard/tree/dev/examples)
 
 </h3>
 
