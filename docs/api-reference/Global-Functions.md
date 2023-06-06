@@ -38,6 +38,16 @@ The identifier of the plugin.
 * It should be unique across all registered plugins.
 * It is recommended to keep it self-explanatory.
 
+### Returns
+
+<Badget type="Callable[[TPlugin], TPlugin]" />
+
+The decorator function to register the plugin.
+
+:::info
+However, to make your code more decoupled and extensible, it is preferred to use a 'chained' way to register the plugin, see [Example](#example) below.
+:::
+
 ### Example
 
 ```python title="plugins.py"
@@ -51,6 +61,7 @@ class GrayScalePlugin(IFieldsPlugin):
 from cfdraw import *
 from plugins import GrayScalePlugin
 
+# highlight-next-line
 register_plugin("gray_scale")(GrayScalePlugin)
 app = App()
 ```
@@ -74,6 +85,12 @@ def cache_resource(fn: callable) -> callable:
 
 The function to be cached.
 
+### Returns
+
+<Badget type="callable" />
+
+The decorated function, which can cache the result of `fn` and return it directly if `fn` is called again (with the same input arguments).
+
 ### Examples
 
 #### For AI models
@@ -84,6 +101,7 @@ The function to be cached.
 from cfdraw import *
 
 
+# highlight-next-line
 @cache_resource
 def get_model():
     import torch
@@ -119,6 +137,7 @@ class TextToImagePlugin(IFieldsPlugin):
 from cfdraw import *
 
 
+# highlight-next-line
 @cache_resource
 def get_client():
     SECRET_ID = os.getenv("SECRET_ID")
@@ -144,7 +163,7 @@ class Plugin(IFieldsPlugin):
 
 ### Source Codes
 
-It might help you to understand `cache_resource` better by reading its source codes.
+It may help you to understand `cache_resource` better by reading its source codes.
 
 ```python
 from typing import Any
