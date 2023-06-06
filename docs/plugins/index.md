@@ -14,6 +14,30 @@ import Video from "@site/src/components/Video";
 
 As mentioned in the [Design Philosophy](/docs/reference/design-philosophy), everything in `carefree-drawboard` 🎨 is a **plugin**, so it will be important to understand how plugins are built / work. In this page, we will cover the **common** parts that every plugin will share, and leave those specific parts to separate pages.
 
+<details>
+
+<summary><strong>How to -</strong></summary>
+
+<h3> Find / Use Plugins? </h3>
+
+In the future, we will implement a built-in marketplace for plugins, so that you can publish / search / download / use them easily. For now, you may need to build your own plugins from scratch. 😣
+
+However, since plugins can be built within one single file, for now you can share your plugins by simply sharing the source code of the plugin file. 😆
+
+And, as we introduced in the [Getting Started](/docs/getting-started), we have a [Register Mechanism](#register-mechanism) for the plugins, so you can include others' plugins without worrying too much - unless you import & register them, no side effects will be caused.
+
+<h3> Publish Plugins? </h3>
+
+As mentioned above, we will implement a built-in marketplace for plugins in the future, so publishing plugins will be very easy. But for now, you may need to share your plugins by:
+* Simply sharing the source code of the plugin file.
+* Follow the [Contributing](/docs/contributing-guides/contributing) guide and submit a PR.
+
+<h3> Build Plugins? </h3>
+
+That's what this page is mainly about. 😎 Stay tuned!
+
+</details>
+
 ## Basic Concepts
 
 A `Plugin` in `carefree-drawboard` 🎨 usually consists of two parts:
@@ -38,7 +62,9 @@ To make things easier, we extracted the common parts of the plugins into the [Bu
 1. What should be the **Styles** of the `plugin button` and the `expand panel`?
 2. What should be the **Logics** when the `Submit` button is clicked and the user inputs are sent to the backend?
 
-And in the following sections, we will cover these two parts in detail.
+After all things are done, you or other users can utilize the [Register Mechanism](#register-mechanism) to register the plugins into the drawboard 🎨. Before which, no side effects will be caused.
+
+And in the following sections, we will cover these concepts in detail.
 
 ## Inheritance
 
@@ -195,6 +221,12 @@ So it is enough for most if not every scenario!
 
 ### Accessibility
 
+:::info API reference
+* [Built-in Methods](/docs/api-reference/Built-in-Methods)
+* [ISocketRequest](/docs/api-reference/ISocketRequest)
+  * [INodeData](/docs/api-reference/ISocketRequest#inodedata)
+:::
+
 However, providing all necessary data is not the end of the story, we also need to make sure that we can utilize the data in a convenient way. For example, for any plugin that requires processing an image, we should be able to get a `PIL.Image` instance as easy as possible.
 
 Therefore, `carefree-drawboard` 🎨 provides a set of [Built-in Methods](/docs/api-reference/Built-in-Methods) to help you out. A typical example is the `load_image` method, which can help you download an image from a url in an `async` way:
@@ -215,11 +247,7 @@ class Plugin(IFieldsPlugin):
         ...
 ```
 
-:::info API reference
-* [Built-in Methods](/docs/api-reference/Built-in-Methods)
-* [ISocketRequest](/docs/api-reference/ISocketRequest)
-  * [INodeData](/docs/api-reference/ISocketRequest#inodedata)
-:::
+## Register Mechanism
 
 ## Reference
 
