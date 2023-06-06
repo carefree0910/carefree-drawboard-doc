@@ -23,7 +23,7 @@ import Video from "@site/src/components/Video";
 
   🎨 is designed to be used in real world projects. **Infinite Drawboard** is capable of handling (almost) every complex scenario.
 
-* **Mordern AI Oriented**
+* **Modern AI Oriented**
 
   🎨 is designed to work with modern AI technologies, such as Stable Diffusion, GPTs, and so on.
 
