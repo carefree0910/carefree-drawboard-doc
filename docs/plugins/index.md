@@ -249,6 +249,55 @@ class Plugin(IFieldsPlugin):
 
 ## Register Mechanism
 
+:::info API reference
+* [register_plugin](/docs/api-reference/Global-Functions#register_plugin)
+:::
+
+In `carefree-drawboard` 🎨, every plugin needs to be registered to actually work. Let's say you defined a plugin in the `my_plugin.py` file:
+
+```python title="my_plugin.py"
+from cfdraw import *
+
+class MyPlugin(IFieldsPlugin):
+    ...
+```
+
+Then in your main app file (e.g., `app.py`), you can register it like this:
+
+```python title="app.py"
+from cfdraw import *
+# highlight-next-line
+from my_plugin import MyPlugin
+
+# highlight-next-line
+register_plugin("my_plugin")(MyPlugin)
+app = App()
+```
+
+If there's another plugin called `MyPlugin` as well in another file (e.g., `my_plugin2.py`), and you want to register it as well, you can:
+
+```python title="app.py"
+from cfdraw import *
+# highlight-next-line
+from my_plugin import MyPlugin as MyPlugin1
+# highlight-next-line
+from my_plugin2 import MyPlugin as MyPlugin2
+
+# highlight-start
+# Notice that you need to keep the 'name' you passed to the 
+# `register_plugin` function unique across all registered plugins!
+register_plugin("my_plugin1")(MyPlugin1)
+register_plugin("my_plugin2")(MyPlugin2)
+# highlight-end
+app = App()
+```
+
+:::tip
+`carefree-drawboard` 🎨 introduced this register mechanism because it can make the whole system:
+* More **decoupled**. You can now define plugins freely without worrying about any side effects.
+* More **extensible**. If you want to use plugins implemented by others, you can simply import & register them.
+:::
+
 ## Reference
 
 ### Built-in Bindings
