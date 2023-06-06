@@ -3,6 +3,8 @@ id: Built-in-Methods
 title: Built-in Methods
 ---
 
+import Badget from '@site/src/components/Badget';
+
 :::tip
 Methods in this page can be accessed by any plugin in `carefree-drawboard` 🎨.
 :::
@@ -15,6 +17,24 @@ This method can help you pick up the nodes of the specified type.
 def filter(self, nodes: List[INodeData], target: SingleNodeType) -> List[INodeData]:
     return list(filter(lambda node: node.type == target, nodes))
 ```
+
+#### `nodes`
+
+<Badget type={<>List[<a href="/carefree-drawboard-doc/docs/api-reference/ISocketRequest#inodedata">INodeData</a>]</>} required />
+
+The list of [`INodeData`](/docs/api-reference/ISocketRequest#inodedata) objects to be filtered.
+
+#### `target`
+
+<Badget type={<a href="/carefree-drawboard-doc/docs/api-reference/Types#singlenodetype">SingleNodeType</a>} required />
+
+The type of nodes to be picked up.
+
+#### Returns
+
+<Badget type={<>List[<a href="/carefree-drawboard-doc/docs/api-reference/ISocketRequest#inodedata">INodeData</a>]</>} />
+
+The filtered list of [`INodeData`](/docs/api-reference/ISocketRequest#inodedata) objects.
 
 #### Example
 
@@ -47,6 +67,18 @@ async def load_image(self, src: str) -> Image.Image:
 Don't forget to `await` this method!
 :::
 
+#### `src`
+
+<Badget type="str" required />
+
+The url of the image to be downloaded.
+
+#### Returns
+
+<Badget type="Image" />
+
+The downloaded `PIL.Image` object.
+
 #### Example
 
 ```python title="app.py"
@@ -69,6 +101,12 @@ class Plugin(IFieldsPlugin):
 
 This method can be used to send the intermediate progress to the frontend.
 
+:::caution
+This method is useful only if the corresponding plugin binding can handle the intermediate progress data. Currently, only the following situations are supported:
+* You can send `progress` to [IFieldsPlugin](/docs/plugins/IFieldsPlugin), so the progress bar will be updated.
+* You can send `textList` to [IChatPlugin](/docs/plugins/IChatPlugin), so the chat will be updated.
+:::
+
 ```python title="cfdraw/plugins/base.py"
 def send_progress(
     self,
@@ -87,15 +125,9 @@ As the highlighted line shows, this method returns `bool`, which indicates wheth
 If `False` is returned, it usually means that you should cancel the operation.
 :::
 
-:::caution
-This method is useful only if the corresponding plugin binding can handle the intermediate progress data. Currently, only the following situations are supported:
-* You can send `progress` to [IFieldsPlugin](/docs/plugins/IFieldsPlugin), so the progress bar will be updated.
-* You can send `textList` to [IChatPlugin](/docs/plugins/IChatPlugin), so the chat will be updated.
-:::
-
 #### Examples
 
-##### [`IFieldsPlugin`](/docs/plugins/IFieldsPlugin)
+* [`IFieldsPlugin`](/docs/plugins/IFieldsPlugin)
 
 ```python title="app.py"
 from cfdraw import *
@@ -119,7 +151,7 @@ class Plugin(IFieldsPlugin):
 
 This example will update the progress bar every 0.25 seconds.
 
-##### [`IChatPlugin`](/docs/plugins/IChatPlugin)
+* [`IChatPlugin`](/docs/plugins/IChatPlugin)
 
 ```python title="app.py"
 from cfdraw import *
@@ -149,19 +181,42 @@ def send_exception(self, message: str) -> bool:
     ...
 ```
 
+#### `message`
+
+<Badget type="str" required />
+
+The exception message to be sent.
+
+#### Returns
+
+<Badget type="bool" />
+
+Whether the exception message is successfully sent.
+
 ### `set_extra_response`
 
 This method can be used to set an extra response key-value pair.
+
+:::info
+This method will be useful when you want to record some extra data to the [meta](/docs/user-guides/features#meta) of the new [Node](/docs/reference/terminology#node).
+:::
 
 ```python title="cfdraw/plugins/base.py"
 def set_extra_response(self, key: str, value: Any) -> None:
     ...
 ```
 
-:::info
-* The `value` should be JSON serializable.
-* This method will be useful when you want to record some extra data to the [meta](/docs/user-guides/features#meta) of the new [Node](/docs/reference/terminology#node).
-:::
+#### `key`
+
+<Badget type="str" required />
+
+The key of the extra response.
+
+#### `value`
+
+<Badget type="Any" required />
+
+The value of the extra response, should be JSON serializable.
 
 ### `set_injection`
 
@@ -171,6 +226,18 @@ This method can be used to set an extra injection.
 def set_injection(self, key: str, node: INodeData) -> None:
     ...
 ```
+
+#### `key`
+
+<Badget type="str" required />
+
+The key of the injection.
+
+#### `node`
+
+<Badget type={<a href="/carefree-drawboard-doc/docs/api-reference/ISocketRequest#inodedata">INodeData</a>} required />
+
+The node of the injection.
 
 :::info
 See [Injections](/docs/reference/terminology#injections) for what an 'injection' is.
