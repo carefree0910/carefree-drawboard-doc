@@ -399,7 +399,7 @@ dict(
 ```
 
 * The plugin will be displayed if and only if the `ImageNode` is selected.
-* The plugin will follow the right top corner of (the bounding box of) the `ImageNode`.
+* The plugin will follow the `rt` (**r**ight **t**op) corner of (the bounding box of) the `ImageNode`.
 
 <Video url="https://user-images.githubusercontent.com/15677328/231755350-0e805ea4-2977-43ce-9332-6e0cb5528f93.mp4" />
 
@@ -414,7 +414,7 @@ dict(
 ```
 
 * The plugin will always be displayed.
-* The plugin will be placed at the right top corner of the entire drawboard 🎨.
+* The plugin will be placed at the `rt` (**r**ight **t**op) corner of the entire drawboard 🎨.
 
 <Video url="https://user-images.githubusercontent.com/15677328/231756113-8f812860-c7af-44da-9afd-17b5f469f7f6.mp4" />
 
@@ -431,7 +431,7 @@ dict(
 ```
 
 * The plugin will be displayed if and only if (exactly) an `ImageNode` & a `PathNode` are selected.
-* The plugin will follow the right top corner of (the bounding box of) the selected `Node`s.
+* The plugin will follow the `rt` (**r**ight **t**op) corner of (the bounding box of) the selected `Node`s.
 
 <Video url="https://user-images.githubusercontent.com/15677328/235454904-65a383e8-ef7c-46f8-9e94-fb576b762222.mp4" />
 
