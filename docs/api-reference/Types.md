@@ -54,3 +54,20 @@ class IChakra(BaseModel):
     bg: Optional[str] = Field(None, description="Background color")
     textAlign: Optional[TextAlign] = Field(None, description="Text align")
 ```
+
+## `SingleNodeType`
+
+```python title="cfdraw/parsers/noli.py"
+class SingleNodeType(str, Enum):
+    POLYGON = "polygon"
+    ELLIPSE = "ellipse"
+    RECTANGLE = "rectangle"
+    STAR = "star"
+    LINE = "line"
+    PATH = "path"
+    SVG = "svg"
+    TEXT = "text"
+    IMAGE = "image"
+    NOLI_FRAME = "noliFrame"
+    NOLI_TEXT_FRAME = "noliTextFrame"
+```
