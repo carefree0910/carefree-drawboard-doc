@@ -115,7 +115,7 @@ class SendSocketMessageMiddleware(IMiddleware):
             if response.data.final is None:
                 response.data.final = {}
             response.data.final["extra"] = self.plugin.extra_responses
-            response.data.injections = self.plugin.injections
+        response.data.injections = self.plugin.injections
         # highlight-end
         await self.plugin.send_message(response)
         return response
