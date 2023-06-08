@@ -48,7 +48,7 @@ class IMiddleware(ABC):
     def __init__(self, plugin: IPlugin) -> None:
         self.plugin = plugin
 
-    async def __call__(self, response: Any) -> ISocketMessage:
+    async def __call__(self, response: Any) -> Any:
         if (
             self.subscriptions != Subscription.ALL
             and self.plugin.type not in self.subscriptions
@@ -107,7 +107,9 @@ class SendSocketMessageMiddleware(IMiddleware):
     def can_handle_message(self) -> bool:
         return True
 
-    async def process(self, response: ISocketMessage) -> ISocketMessage:
+    async def process(self, response):
+        if response is None:
+            return None
         # highlight-start
         if self.plugin.extra_responses:
             if response.data.final is None:
