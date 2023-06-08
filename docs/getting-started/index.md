@@ -287,12 +287,11 @@ There are **MANY** handy properties in `nodeData`, check [INodeData](/docs/api-r
 <summary>Along with <code>nodeData</code>, there are three common properties in <code>ISocketRequest</code> that you may need:</summary>
 
 * `nodeData`, it is an [INodeData](/docs/api-reference/ISocketRequest#inodedata) instance.
-    * If no nodes are selected, this property will be `None`.
-    * If multiple nodes are selected, this property will be `None` and please use `nodeDataList` instead.
+    * If no nodes are selected, this property will be empty.
+    * If multiple nodes are selected, this property will be empty and please use `nodeDataList` instead.
 * `nodeDataList`, it is a list of [INodeData](/docs/api-reference/ISocketRequest#inodedata) instance.
-    * If no nodes are selected, this property will be `None`.
-    * Please use this property if multiple nodes are selected.
-    * If only one node is selected, this property will be `None` and please use `nodeData` instead.
+    * If no nodes are selected, this property will be empty.
+    * If only one node is selected, this property will be empty and please use `nodeData` instead.
 * `extraData`, it is a `dict` that aligns to the `definitions` property defined above.
 
 </details>
