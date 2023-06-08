@@ -46,7 +46,8 @@ The identifier of the plugin.
 Data extracted from the selecting [`Node`](/docs/reference/terminology#node).
 
 :::info
-If multiple nodes are selected, this field will be empty and please use [nodeDataList](#nodedatalist) instead.
+* If no nodes are selected, this property will be empty.
+* If multiple nodes are selected, this property will be empty and please use [nodeDataList](#nodedatalist) instead.
 :::
 
 ### `nodeDataList`
@@ -56,7 +57,8 @@ If multiple nodes are selected, this field will be empty and please use [nodeDat
 List of data extracted from the selecting [`Node`](/docs/reference/terminology#node)s.
 
 :::info
-If only one node is selected, this field will be empty and please use [nodeData](#nodedata) instead.
+* If no nodes are selected, this property will be empty.
+* If only one node is selected, this property will be empty and please use [nodeData](#nodedata) instead.
 :::
 
 ### `extraData`
