@@ -13,6 +13,18 @@ We'll introduce some common properties in this page, and leave the specific prop
 * [IPluginGroupInfo](/docs/api-reference/IPluginGroupInfo)
 :::
 
+### `name`
+
+<Badget type="str" defaultValue="None" />
+
+Name that will be displayed at the `Settings` plugin.
+
+### `noErrorToast`
+
+<Badget type="bool" defaultValue="False" />
+
+If `True`, the plugin will not show error toast when exception occurred.
+
 ### `retryInterval`
 
 <Badget type="int" defaultValue="None" />
@@ -27,27 +39,4 @@ If not `None`, the plugin will be called every `updateInterval` ms.
 
 :::caution
 This is dangerous to use, please don't use it unless you do need it.
-:::
-
-### `closeOnSubmit`
-
-<Badget type="bool" defaultValue="True" />
-
-Whether close the `expand panel` when the submit button is clicked.
-
-### `toastOnSubmit`
-
-<Badget type="bool" defaultValue="True" />
-
-Whether trigger a toast message when the submit button is clicked.
-
-### `toastMessageOnSubmit`
-
-<Badget type="str" defaultValue="None" />
-
-The message of the toast.
-
-:::note
-* If it is `None`, default toast message will be used.
-* Only take effect when [toastOnSubmit](#toastonsubmit) is `True`.
 :::
