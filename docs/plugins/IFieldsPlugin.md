@@ -5,7 +5,7 @@ title: IFieldsPlugin
 
 :::info API reference
 * [IPluginInfo](/docs/api-reference/IPluginInfo)
-  * [IFieldsPluginInfo](/docs/api-reference/IPluginInfo#ifieldsplugininfo)
+  * [IFieldsPluginInfo](/docs/api-reference/IFieldsPluginInfo)
 :::
 
 Currently, the most commonly used plugin binding should be the `IFieldsPlugin`. It assumes that:
