@@ -7,7 +7,7 @@ import Video from '@site/src/components/Video';
 
 :::info API reference
 * [IPluginInfo](/docs/api-reference/IPluginInfo)
-  * [IChatPluginInfo](/docs/api-reference/IPluginInfo#ichatplugininfo)
+  * [IChatPluginInfo](/docs/api-reference/IChatPluginInfo)
 :::
 
 `IChatPlugin` is a (very) simple plugin binding for you to interact with a chat API (e.g., ChatGPT API), but it is pretty out of the box to use.
