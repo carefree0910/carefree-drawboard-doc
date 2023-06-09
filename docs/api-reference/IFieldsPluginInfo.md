@@ -58,6 +58,29 @@ class Plugin(IFieldsPlugin):
 
 Number of columns that will be used to arrange the input fields.
 
+### `closeOnSubmit`
+
+<Badget type="bool" defaultValue="True" />
+
+Whether close the `expand panel` when the submit button is clicked.
+
+### `toastOnSubmit`
+
+<Badget type="bool" defaultValue="True" />
+
+Whether trigger a toast message when the submit button is clicked.
+
+### `toastMessageOnSubmit`
+
+<Badget type="str" defaultValue="None" />
+
+The message of the toast.
+
+:::note
+* If it is `None`, default toast message will be used.
+* Only take effect when [toastOnSubmit](#toastonsubmit) is `True`.
+:::
+
 ## Available Fields
 
 There are plenty of available fields and they should be able to cover most of your use cases.
