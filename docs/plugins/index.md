@@ -329,9 +329,9 @@ And here's a table of all the supported Built-in Bindings:
 
 | <div style={{width: "200px"}}>Plugin Base Class</div> | <div style={{width: "200px"}}>`IFieldsInfo` inheritor</div> |
 | :---: | :---: |
-| [`IFieldsPlugin`](/docs/plugins/IFieldsPlugin) | [`IFieldsPluginInfo`](/docs/api-reference/IPluginInfo#ifieldsplugininfo) |
-| [`IChatPlugin`](/docs/plugins/IChatPlugin) | [`IChatPluginInfo`](/docs/api-reference/IPluginInfo#ichatplugininfo) |
-| [`IPluginGroup`](/docs/plugins/IPluginGroup) | [`IPluginGroupInfo`](/docs/api-reference/IPluginInfo#iplugingroupinfo) |
+| [`IFieldsPlugin`](/docs/plugins/IFieldsPlugin) | [`IFieldsPluginInfo`](/docs/api-reference/IFieldsPluginInfo) |
+| [`IChatPlugin`](/docs/plugins/IChatPlugin) | [`IChatPluginInfo`](/docs/api-reference/IChatPluginInfo) |
+| [`IPluginGroup`](/docs/plugins/IPluginGroup) | [`IPluginGroupInfo`](/docs/api-reference/IPluginGroupInfo) |
 
 <details>
 
