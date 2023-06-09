@@ -7,7 +7,7 @@ import Video from '@site/src/components/Video';
 
 :::info API reference
 * [IPluginInfo](/docs/api-reference/IPluginInfo)
-  * [IPluginGroupInfo](/docs/api-reference/IPluginInfo#iplugingroupinfo)
+  * [IPluginGroupInfo](/docs/api-reference/IPluginGroupInfo)
 :::
 
 Sometimes we want to group plugins together. For instance, we may want to group the plugins that are related to the same API, or we may want to group the plugins that are related to the same category.
