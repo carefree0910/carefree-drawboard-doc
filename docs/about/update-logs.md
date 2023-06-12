@@ -7,9 +7,20 @@ title: Update Logs
 If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs/implemented some new features/wrote some Wiki, I'll put them here.
 :::
 
+## 2023-06-18
+
+* Supported `custom_embeddings` for the [Live Demo](https://drawboard-demo.nolibox.com/) ([eea5e24](https://github.com/carefree0910/carefree-drawboard/commit/eea5e24d13c5c5e2c3db7008cbdcfbd2ae8dce84)).
+
 ## 2023-06-11
 
 * [Documentation](/docs/getting-started) is now available!
+* Now trace stack will be logged when exception ([bbdb810](https://github.com/carefree0910/carefree-drawboard/commit/bbdb8105be01889d72a6c3f18a5752fc1d5cd2ed)).
+> Which is extremely useful for debugging.
+* Implemented `workflow` stuffs for the [Live Demo](https://drawboard-demo.nolibox.com/) ([260f7c7](https://github.com/carefree0910/carefree-drawboard/commit/260f7c79a59692c118bd7de5735b1a3b1617ae1c), [20cf989](https://github.com/carefree0910/carefree-drawboard/commit/20cf9894c52ed9bcb87e5302034c63858f701bbe), [9772184](https://github.com/carefree0910/carefree-drawboard/commit/97721840e3fda14529a8e2f190cdca51d5bfa295), etc.).
+* Allowed `None` response ([f905b34](https://github.com/carefree0910/carefree-drawboard/commit/f905b3432430660b59d5332fbe3ee5a3d95030fe)).
+> This is useful when we detect exceptions during `process` and decide to manually `send_exception`. In which case, we can return `None` at the `process` method, and the frontend will only toast the exception message without doing anything else.
+* Enhanced `TextField` ([a35fe10](https://github.com/carefree0910/carefree-drawboard/commit/a35fe10f91c3cc5c9f5574722fdb7f7525107acd)).
+> Now we can select a `TextNode` as the binding of the `TextField`, in which case the [Injections](/docs/reference/terminology#injections) will be maintained automatically.
 
 ## 2023-06-04
 
