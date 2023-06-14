@@ -18,6 +18,11 @@ module.exports = {
         autoCollapseCategories: true,
       },
     },
+    algolia: {
+      appId: "DK6J5K49I4",
+      apiKey: "8a0b36d4b7129a8715d54ada6ba972f1",
+      indexName: "carefree0910",
+    },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("prism-react-renderer/themes/dracula"),
