@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>carefree-drawboard</ShortName>
+  <Description>Search carefree-drawboard</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://carefree0910.me/carefree-drawboard-doc/./img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://carefree0910.me/carefree-drawboard-doc/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://carefree0910.me/carefree-drawboard-doc/opensearch.xml" />
+  <moz:SearchForm>https://carefree0910.me/carefree-drawboard-doc/</moz:SearchForm>
+</OpenSearchDescription>
