@@ -10,6 +10,8 @@ If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs
 ## 2023-06-18
 
 * Supported `custom_embeddings` for the [Live Demo](https://drawboard-demo.nolibox.com/) ([eea5e24](https://github.com/carefree0910/carefree-drawboard/commit/eea5e24d13c5c5e2c3db7008cbdcfbd2ae8dce84)).
+* We'll now use `sqlite` to manage projects ([cf0cf3e](https://github.com/carefree0910/carefree-drawboard/commit/cf0cf3ede3ad6972b4b82c0dadaa84a54d0acfc8)).
+* Fixed & Enhanced `workflow` stuffs for the [Live Demo](https://drawboard-demo.nolibox.com/) ([c1d4cbd](https://github.com/carefree0910/carefree-drawboard/commit/c1d4cbd92acf9650abaa8866ae550688dc1373bb), [4cbb002](https://github.com/carefree0910/carefree-drawboard/commit/4cbb002ab7d1331c23e8748822b142baa4b0a3cd), etc.).
 
 ## 2023-06-11
 
