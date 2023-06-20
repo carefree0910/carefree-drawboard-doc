@@ -7,6 +7,13 @@ title: Update Logs
 If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs/implemented some new features/wrote some Wiki, I'll put them here.
 :::
 
+## 2023-06-25
+
+* Introduced `image_group` template ([5433f5d](https://github.com/carefree0910/carefree-drawboard/commit/5433f5d46e66f30acc33cf27bbb0a88fee82ab71)).
+* Supported specifying `expandPivot` ([a49b6eb](https://github.com/carefree0910/carefree-drawboard/commit/a49b6eb359fcd4fae13ff578e9b463a202de843e)).
+* Supported recognizing `pivot` when `useModal` ([c27673d](https://github.com/carefree0910/carefree-drawboard/commit/c27673d15eaed06d616312152b3ff7f6bd6d79cd)).
+* Supported using ratio (e.g., `0.8`) for `w` & `h` ([cea22f5](https://github.com/carefree0910/carefree-drawboard/commit/cea22f5896145b4da420b06c75aecab9f2012951)).
+
 ## 2023-06-18
 
 * Supported `custom_embeddings` for the [Live Demo](https://drawboard-demo.nolibox.com/) ([eea5e24](https://github.com/carefree0910/carefree-drawboard/commit/eea5e24d13c5c5e2c3db7008cbdcfbd2ae8dce84)).
