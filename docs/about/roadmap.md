@@ -67,7 +67,7 @@ Priorities are from top to bottom, but subject to change (based on your needs!),
 
 > Which can make `carefree-drawboard` 🎨 more like an '[AI Operation System](/docs/reference/brainstorm#the-ai-operation-system)'.
 
-- [ ] Support using ratio (e.g., `"80%"`) for `w` fields and `h` fields.
+- [x] Support using ratio (e.g., `0.8`) for `w` & `h` ([cea22f5](https://github.com/carefree0910/carefree-drawboard/commit/cea22f5896145b4da420b06c75aecab9f2012951)).
 - [ ] Implement CLI which can pack/publish and download/install the images, projects & plugin script files.
 
     * This can make sharing stuffs much easier.
