@@ -22,6 +22,7 @@ module.exports = {
     },
     {
       "User Guides": [
+        "user-guides/cli",
         "user-guides/features",
         "user-guides/keyboard-shortcuts",
         "user-guides/configurations",
