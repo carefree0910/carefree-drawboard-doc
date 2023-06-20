@@ -224,7 +224,7 @@ in the `dict`, it means that we want to have an input field named `size`, and it
 
 <details>
 
-<summary>Apart from these, you may want to assign a nice-looking icon to your plugin.</summary>
+<summary>Apart from these, you may want to assign a nice looking icon to your plugin.</summary>
 
 We can achieve this by specifying `src` property of the `IPluginSettings`:
 
