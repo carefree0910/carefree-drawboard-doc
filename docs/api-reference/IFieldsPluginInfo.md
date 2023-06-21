@@ -454,6 +454,12 @@ This is handy if the corresponding field can be 'stacked' (e.g., multi LoRA, mul
 
 The definition of the 'form'.
 
+### `displayKey`
+
+<Badget type="str" defaultValue="None" />
+
+The key of the field to be displayed when collapsed.
+
 ### `default`
 
 <Badget type="List[Any]" defaultValue="[]" />
