@@ -227,11 +227,12 @@ This is mainly for accessibility when we want to use [`I18N`](/docs/api-referenc
 
 ```python
 class I18NSelectField(IBaseField):
-    mapping: Dict[str, I18N] = Field(
+    mapping: Union[Dict[str, I18N], str] = Field(
         ...,
         description=(
             "The mapping of the options. "
-            "The key is the 'actual' option, and the value is the i18n object to be displayed"
+            "The key is the 'actual' option, and the value is the i18n object to be displayed\n"
+            "> If `str` is provided, it represents the path to the mapping json file."
         ),
     )
     default: str = Field(..., description="The default 'actual' option of the field")
@@ -243,6 +244,12 @@ class I18NSelectField(IBaseField):
 <Badget type={<>Dict[str, <a href="/carefree-drawboard-doc/docs/api-reference/Types#i18n">I18N</a>]</>} required />
 
 The mapping of the options. The key is the `actual` option, and the value is the [`I18N`](/docs/api-reference/Types#i18n) object to be displayed.
+
+:::info
+You can assign this field with an absolute path to a json file, and we'll **dynamically** load the mapping from it.
+
+This is extremely useful when we want to hot-reload the select options without restarting the server.
+:::
 
 ### `default`
 
