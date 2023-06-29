@@ -45,6 +45,7 @@ If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs
 > This is a significant and important optimization, which makes sure that the rendering stay smooth even tens of plugins are used.
 * Supported `no_offload` ([8cb2fc8](https://github.com/carefree0910/carefree-drawboard/commit/8cb2fc8d66b8aaf44c0ca451a83eb4afdce20a7e)).
 * Supported specifying `requirements.txt` ([3cd9b39](https://github.com/carefree0910/carefree-drawboard/commit/3cd9b3912016ab5f8cadee12296de655989127e3)).
+* Supported hot-reloading options of `I18NSelectField` ([201b3bc](https://github.com/carefree0910/carefree-drawboard/commit/201b3bc362a072decb3a3dcf8eb175e5f66cd507)).
 
 ## 2023-05-28
 
