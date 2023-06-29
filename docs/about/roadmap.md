@@ -72,7 +72,7 @@ Priorities are from top to bottom, but subject to change (based on your needs!),
 
     * This can make sharing stuffs much easier.
 
-- [ ] Implement a plugin which can display the generation sequence of a `Node`.
+- [x] Implement a plugin which can display the generation sequence of a `Node` ([260f7c7](https://github.com/carefree0910/carefree-drawboard/commit/260f7c79a59692c118bd7de5735b1a3b1617ae1c), [20cf989](https://github.com/carefree0910/carefree-drawboard/commit/20cf9894c52ed9bcb87e5302034c63858f701bbe), [9772184](https://github.com/carefree0910/carefree-drawboard/commit/97721840e3fda14529a8e2f190cdca51d5bfa295), etc.).
 
     * This can help you track your creation history.
 
@@ -114,7 +114,6 @@ Priorities are from top to bottom, but subject to change (based on your needs!),
 >
 > But maybe using `uvicorn` is enough? 🤔
 
-- [ ] Add show/hide controller on each field in a `FieldsPlugin`.
 - [x] Support saving current project periodically (see [Auto Save](/docs/user-guides/features#auto-save) for more details).
 - [x] Add versioning to projects.
 
