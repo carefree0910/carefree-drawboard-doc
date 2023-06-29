@@ -7,6 +7,13 @@ title: Update Logs
 If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs/implemented some new features/wrote some Wiki, I'll put them here.
 :::
 
+## 2023-07-02
+
+* Implemented `replaceAll` manually, for better compatibility ([0e87296]https://github.com/carefree0910/carefree-drawboard/commit/0e8729675e4ea4dd35442c802ba202d4ebd3722b).
+* Enhanced `MetaPlugin` ([9ab56c8](https://github.com/carefree0910/carefree-drawboard/commit/9ab56c880d11df02181024796aa36bda0d8b595e)).
+* Supported `minW`, `minH`, `maxW`, `maxH` ([2731144](https://github.com/carefree0910/carefree-drawboard/commit/2731144ed28d0d33ee2ffb495c986945802f47a5)).
+* Enhanced `ColorPicker` ([b31893a](https://github.com/carefree0910/carefree-drawboard/commit/b31893a0645211b57f5266a73e44990efe3e9fdd), [f73d981](https://github.com/carefree0910/carefree-drawboard/commit/f73d9817849b59b9105538a39eb592f947318d75), [72c811e](https://github.com/carefree0910/carefree-drawboard/commit/72c811e2573c7858b7c748478c142974b1cc3db6)).
+
 ## 2023-06-25
 
 * Introduced `image_group` template ([5433f5d](https://github.com/carefree0910/carefree-drawboard/commit/5433f5d46e66f30acc33cf27bbb0a88fee82ab71)).
