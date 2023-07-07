@@ -119,6 +119,14 @@ Number of rows that will be occupied by this field.
 
 This is useful when we want our field to be larger. Typically, we can set it to a number not smaller than `2` to make the [`ITextField`](#itextfield) larger, so users can input text more comfortably.
 
+### `condition`
+
+<Badget type="str | None" defaultValue="None" />
+
+Whether the field is conditioned on another field (i.e., show this field only when the `condition` field has a `True` value).
+
+This is useful when the settings are hierarchical. For example, we may want to show the `model` field only when the `useModel` field has a `True` value.
+
 ## `ITextField`
 
 This is used to collect a piece of text from the user.
