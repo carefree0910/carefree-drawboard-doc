@@ -7,6 +7,10 @@ title: Update Logs
 If something in [Roadmap](/docs/about/roadmap) is finished, or I fixed some bugs/implemented some new features/wrote some Wiki, I'll put them here.
 :::
 
+## 2023-07-09
+
+* Supported `condition` ([c4d3d92](https://github.com/carefree0910/carefree-drawboard/commit/c4d3d920cdab95c50f12d0767691e5bb7821be38)).
+
 ## 2023-07-02
 
 * Implemented `replaceAll` manually, for better compatibility ([0e87296]https://github.com/carefree0910/carefree-drawboard/commit/0e8729675e4ea4dd35442c802ba202d4ebd3722b).
